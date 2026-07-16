@@ -5,16 +5,16 @@ public class Task31Polymorph {
         System.out.println("обычный студент");
         usualStudent.study();
 
-        JavaStudent javaStudent = new JavaStudent();
+        Student javaStudent = new JavaStudent();
         System.out.println("Java студент");
         javaStudent.study();
 
-        LazyStudent lazyStudent = new LazyStudent();
+        Student lazyStudent = new LazyStudent();
         System.out.println("ленивый студент");
         lazyStudent.study();
     }
     public static class Student{
-       public String studying = "учусь";
+       private String studying = "учусь";
        public void study (){
            System.out.println(studying);
        }
